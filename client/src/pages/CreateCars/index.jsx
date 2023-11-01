@@ -23,7 +23,7 @@ const CreateCars = () => {
       data: carData, // YOU WILL FIND THIS DATA IN ***req.body*** OF THE ROUTE
     }).then((res) => {
       console.log(res.data);
-      setData({
+      setCarData({
         name: "",
         color: "",
         age: "",
@@ -77,7 +77,7 @@ const CreateCars = () => {
           name="readyToDrive"
           value={carData.readyToDrive}
           onChange={(e) =>
-            setFruitData({ ...carData, readyToDrive: !carData.readyToDrive })
+            setCarData({ ...carData, readyToDrive: !carData.readyToDrive })
           }
         />
         <br />

@@ -1,7 +1,6 @@
 import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
-import Car from "../../../../backend/models/Car";
 
 const Cars = () => {
   const [cars, setCars] = useState([]);
